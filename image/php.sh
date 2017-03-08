@@ -9,7 +9,7 @@ LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 apt-get update
 
 ## Often used tools.
-$minimal_apt_get_install curl unzip mysql-client postgresql-client redis-tools mongodb-clients nodejs
+$minimal_apt_get_install curl unzip mysql-client postgresql-client redis-tools mongodb-clients nodejs nodejs-legacy npm
 
 ## PHP packages
 $minimal_apt_get_install \
@@ -33,6 +33,9 @@ $minimal_apt_get_install \
 	php$1-zip \
 	php-mongodb \
 	php-redis
+
+# Grunt and bower
+npm install -g grunt bower
 
 # Composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
