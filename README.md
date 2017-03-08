@@ -7,6 +7,7 @@
 
 * curl
 * unzip
+* git
 * mysql-client
 * postgresql-client
 * redis-tools

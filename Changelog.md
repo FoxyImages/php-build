@@ -1,3 +1,7 @@
+## 0.1.2 (release date: 2017-03-08)
+
+ * Added `git`
+
 ## 0.1.1 (release date: 2017-03-08)
 
  * Added `npm`

@@ -9,7 +9,8 @@ LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 apt-get update
 
 ## Often used tools.
-$minimal_apt_get_install curl unzip mysql-client postgresql-client redis-tools mongodb-clients nodejs nodejs-legacy npm
+$minimal_apt_get_install curl unzip git mysql-client postgresql-client \
+	redis-tools mongodb-clients nodejs nodejs-legacy npm
 
 ## PHP packages
 $minimal_apt_get_install \
