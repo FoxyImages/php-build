@@ -1,3 +1,7 @@
+## 0.2.0 (release date: 2017-03-27)
+
+ * Fixed PHP 7.1 build, where 7.0 packages was used
+
 ## 0.1.2 (release date: 2017-03-08)
 
  * Added `git`
