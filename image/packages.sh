@@ -41,5 +41,10 @@ npm install -g grunt bower
 # Composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+mkdir /cache
+
+# NPM: cache
+npm config set cache /cache/npm
+
 # Composer speedup
 composer global require hirak/prestissimo:@stable

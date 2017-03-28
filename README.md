@@ -49,6 +49,19 @@
 * [composer](https://getcomposer.org/) (of course)
 * [hirak/prestissimo](https://github.com/hirak/prestissimo) which speeds up composer install
 
+## Cache dirs redirected
+
+ * NPM: `/cache/npm`
+ * Bower: `/cache/bower`
+ * Composer: `/cache/composer`
+
+You may want to set `/cache` dir as Docker image volume for faster CI build.
+
+## ENV variables changed/added
+
+ * `$PATH`: added `~/.composer/vendor/bin`
+ * `$COMPOSER_NO_INTERACTION`: set to `1`
+
 ## Tags (and PHP version) available for Docker
 
 * 5.6

@@ -1,5 +1,5 @@
 NAME = sunfoxcz/php-build
-VERSION = 0.2.0
+VERSION = 0.3.0
 
 .PHONY: all php56 php70 php71 tag_latest release
 
