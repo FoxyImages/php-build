@@ -5,7 +5,7 @@ ADD image /build
 
 RUN /build/prepare.sh && \
 	/build/system_services.sh && \
-	/build/php.sh 7.0 && \
+	/build/packages.sh 7.0 && \
 	/build/cleanup.sh
 
 CMD ["/sbin/my_init"]
