@@ -1,3 +1,8 @@
+## 0.3.1 (release date: 2017-08-29)
+
+ * Added php-parallel-lint
+ * Added code-checker
+
 ## 0.3.0 (release date: 2017-03-28)
 
  * Improved caching using `/cache` dir, which is set as volume on GitLab CI
