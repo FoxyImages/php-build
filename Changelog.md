@@ -1,3 +1,7 @@
+## 0.4.0 (release date: 2018-04-12)
+
+ * Added PHP 7.2
+
 ## 0.3.1 (release date: 2017-08-29)
 
  * Added php-parallel-lint

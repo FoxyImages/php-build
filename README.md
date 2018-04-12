@@ -27,7 +27,7 @@
 * intl
 * json
 * mbstring
-* mcrypt
+* mcrypt (before php 7.2)
 * mysql
 * opcache
 * pgsql
@@ -69,3 +69,4 @@ You may want to set `/cache` dir as Docker image volume for faster CI build.
 * 5.6
 * 7.0
 * 7.1
+* 7.2
