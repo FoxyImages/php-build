@@ -1,3 +1,7 @@
+## 0.4.1 (release date: 2018-09-09)
+
+ * Added extension gmp
+
 ## 0.4.0 (release date: 2018-04-12)
 
  * Added PHP 7.2
