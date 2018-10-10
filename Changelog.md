@@ -1,3 +1,7 @@
+## 0.4.2 (release date: 2018-10-10)
+
+ * Set Composer ENV `COMPOSER_ALLOW_SUPERUSER` to `1` by default
+
 ## 0.4.1 (release date: 2018-09-09)
 
  * Added extension gmp

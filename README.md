@@ -64,6 +64,7 @@ You may want to set `/cache` dir as Docker image volume for faster CI build.
 
  * `$PATH`: added `~/.composer/vendor/bin`
  * `$COMPOSER_NO_INTERACTION`: set to `1`
+ * `$COMPOSER_ALLOW_SUPERUSER`: set to `1`
 
 ## Tags (and PHP version) available for Docker
 
