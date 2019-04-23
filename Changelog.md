@@ -1,3 +1,7 @@
+## 0.5.0 (release date: 2019-04-23)
+
+ * Added PHP 7.3
+
 ## 0.4.2 (release date: 2018-10-10)
 
  * Set Composer ENV `COMPOSER_ALLOW_SUPERUSER` to `1` by default
