@@ -2,6 +2,7 @@
 
  * Updated baseimage to `ubuntu:18.04`
  * Removed `nette/code-checker`
+ * Updated nodejs to `10.x`
 
 ## 0.5.0 (release date: 2019-04-23)
 

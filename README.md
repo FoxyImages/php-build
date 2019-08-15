@@ -2,6 +2,7 @@
 
  * Based on [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker) (but thrown away everything what is not needed for CI)
  * PHP installed from [Ondrej Sury's Ubuntu PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php) which contains almost any posiible package
+ * NodeJS installed from [deb.nodesource.com 10.x](https://deb.nodesource.com/node_10.x)
 
 ## APT packages added
 
@@ -10,8 +11,6 @@
  * mongodb-clients
  * mysql-client
  * nodejs
- * nodejs-legacy
- * npm
  * postgresql-client
  * redis-tools
  * unzip

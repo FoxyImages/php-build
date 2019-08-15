@@ -3,14 +3,20 @@ set -e
 source /build/buildconfig
 set -x
 
+## Often used tools.
+$minimal_apt_get_install curl unzip gnupg git mysql-client postgresql-client redis-tools mongodb-clients
+
 ## PPA Ondrej
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
+## NPM apt repository
+curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+echo 'deb https://deb.nodesource.com/node_10.x bionic main' > /etc/apt/sources.list.d/nodesource.list
+
 apt-get update
 
-## Often used tools.
-$minimal_apt_get_install curl unzip git mysql-client postgresql-client \
-	redis-tools mongodb-clients nodejs nodejs-legacy npm
+## NodeJS
+$minimal_apt_get_install nodejs
 
 ## PHP packages
 $minimal_apt_get_install \
