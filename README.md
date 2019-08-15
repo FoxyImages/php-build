@@ -41,7 +41,6 @@
 
 ## NPM packages globally installed
 
- * bower
  * grunt
 
 ## Composer packages globally installed
@@ -53,7 +52,6 @@
 ## Cache dirs redirected
 
  * NPM: `/cache/npm`
- * Bower: `/cache/bower`
  * Composer: `/cache/composer`
 
 You may want to set `/cache` dir as Docker image volume for faster CI build.
