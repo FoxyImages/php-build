@@ -1,3 +1,7 @@
+## 0.6.0 (release date: 2019-08-15)
+
+ * Updated baseimage to `ubuntu:18.04`
+
 ## 0.5.0 (release date: 2019-04-23)
 
  * Added PHP 7.3
