@@ -41,7 +41,8 @@ $minimal_apt_get_install \
 	php-mongodb \
 	php-redis
 
-if [ "$1" -ne "7.2" ] && [ "$1" -ne "7.3" ] && [ "$1" -ne "7.4" ]; then
+PHP_VER=`echo $1 | sed -e 's/\.//g'`
+if [ "$PHP_VER" -lt "72" ]; then
 	$minimal_apt_get_install php$1-mcrypt php-sodium
 fi
 
