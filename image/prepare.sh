@@ -10,10 +10,11 @@ export INITRD=no
 mkdir -p /etc/container_environment
 echo -n no > /etc/container_environment/INITRD
 
-## Enable Ubuntu Universe, Multiverse, and deb-src for main.
-sed -i 's/^#\s*\(deb.*main restricted\)$/\1/g' /etc/apt/sources.list
-sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-sed -i 's/^#\s*\(deb.*multiverse\)$/\1/g' /etc/apt/sources.list
+## Enable all ubuntu repositories without deb-src
+echo "deb http://archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse" > /etc/apt/sources.list
+echo "deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse" >> /etc/apt/sources.list
 apt-get update
 
 ## Fix some issues with APT packages.
