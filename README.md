@@ -42,6 +42,7 @@
 ## NPM packages globally installed
 
  * grunt
+ * gulp
 
 ## Composer packages globally installed
 
