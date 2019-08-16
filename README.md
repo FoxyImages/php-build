@@ -35,6 +35,7 @@
  * readline
  * redis
  * soap
+ * sodium (from php 7.1)
  * sqlite3
  * xml
  * zip

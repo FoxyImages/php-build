@@ -1,3 +1,8 @@
+## 0.6.1 (release date: 2019-08-16)
+
+ * Fixed installation of `php-sodium` which resulted in installation of PHP 7.1 under 5.6 image
+ * Extension `php-sodium` now installs only from PHP 7.1 and higher
+
 ## 0.6.0 (release date: 2019-08-15)
 
  * Updated baseimage to `ubuntu:18.04`
