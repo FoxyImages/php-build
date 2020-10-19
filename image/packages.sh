@@ -38,18 +38,18 @@ $minimal_apt_get_install \
 	php$1-sqlite3 \
 	php$1-xml \
 	php$1-zip \
-	php-mongodb \
-	php-redis
+	php$1-mongodb \
+	php$1-redis
 
 PHP_VER=`echo $1 | sed -e 's/\.//g'`
 if [ "$PHP_VER" -lt "72" ]; then
 	$minimal_apt_get_install php$1-mcrypt
 fi
 if [ "$PHP_VER" == "70" ]; then
-	$minimal_apt_get_install php-sodium
+	$minimal_apt_get_install php$1-sodium
 fi
 if [ "$PHP_VER" == "71" ]; then
-	$minimal_apt_get_install php-sodium
+	$minimal_apt_get_install php$1-sodium
 fi
 
 # Grunt and Gulp
