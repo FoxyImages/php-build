@@ -28,7 +28,7 @@
  * json
  * mbstring
  * mcrypt (before php 7.2)
- * mongodb
+ * mongodb (from php 7.0)
  * mysql
  * opcache
  * pgsql

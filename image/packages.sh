@@ -38,11 +38,15 @@ $minimal_apt_get_install \
 	php$1-sqlite3 \
 	php$1-xml \
 	php$1-zip \
-	php$1-mongodb \
 	php$1-redis
 
 PHP_VER=`echo $1 | sed -e 's/\.//g'`
-if [ "$PHP_VER" -lt "72" ]; then
+if [ "$PHP_VER" -ge "70" ]; then
+	# >= 7.0
+	$minimal_apt_get_install php$1-mongodb
+fi
+if [ "$PHP_VER" -le "71" ]; then
+	# <= 7.1
 	$minimal_apt_get_install php$1-mcrypt
 fi
 if [ "$PHP_VER" == "70" ]; then
