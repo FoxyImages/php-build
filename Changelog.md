@@ -1,3 +1,8 @@
+## 0.7.0 (release date: 25.10.2020)
+
+ * Updated `composer` to `2.0`
+ * Removed global package `hirak/prestissimo` incompatible with new Composer
+
 ## 0.6.2 (release date: 04.12.2019)
 
  * Finally fixed installation of `php-sodium` which is not needed any more for PHP 7.2 an newer
