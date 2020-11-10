@@ -1,3 +1,8 @@
+## 0.8.0 (release date: 10.11.2020)
+
+ * Added PHP 8.0
+ * Removed MongoDB PHP extension and clients
+
 ## 0.7.0 (release date: 25.10.2020)
 
  * Updated `composer` to `2.0`

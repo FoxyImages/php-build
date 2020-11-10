@@ -8,7 +8,6 @@
 
  * curl
  * git
- * mongodb-clients
  * mysql-client
  * nodejs
  * postgresql-client
@@ -28,7 +27,6 @@
  * json
  * mbstring
  * mcrypt (before php 7.2)
- * mongodb (from php 7.0)
  * mysql
  * opcache
  * pgsql
@@ -71,3 +69,4 @@ You may want to set `/cache` dir as Docker image volume for faster CI build.
  * 7.2
  * 7.3
  * 7.4
+ * 8.0

@@ -1,9 +1,9 @@
 NAME = sunfoxcz/php-build
 VERSION = 0.4.2
 
-.PHONY: all php56 php70 php71 php72 php73 php74 tag_latest release
+.PHONY: all php56 php70 php71 php72 php73 php74 php80 tag_latest release
 
-all: php56 php70 php71 php72 php73 php74
+all: php56 php70 php71 php72 php73 php74 php80
 
 php56:
 	docker build -t $(NAME):5.6 --rm -f Dockerfile-5.6 .
@@ -22,6 +22,9 @@ php73:
 
 php74:
 	docker build -t $(NAME):7.4 --rm -f Dockerfile-7.4 .
+
+php80:
+	docker build -t $(NAME):8.0 --rm -f Dockerfile-8.0 .
 
 tag_latest:
 	docker tag -f $(NAME):$(VERSION) $(NAME):latest
