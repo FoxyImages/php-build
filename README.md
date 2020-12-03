@@ -26,14 +26,13 @@
  * intl
  * json
  * mbstring
- * mcrypt (before php 7.2)
  * mysql
  * opcache
  * pgsql
  * readline
  * redis
  * soap
- * sodium (from php 7.0)
+ * sodium
  * sqlite3
  * xml
  * zip
@@ -63,9 +62,6 @@ You may want to set `/cache` dir as Docker image volume for faster CI build.
 
 ## Tags (and PHP version) available for Docker
 
- * 5.6
- * 7.0
- * 7.1
  * 7.2
  * 7.3
  * 7.4
