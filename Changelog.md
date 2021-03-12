@@ -1,3 +1,7 @@
+## 0.9.1 (release date: 12.03.2021)
+
+ * Added phpdbg
+
 ## 0.9.0 (release date: 03.12.2020)
 
  * Removed unsupported PHP versions 5.6, 7.0 and 7.1

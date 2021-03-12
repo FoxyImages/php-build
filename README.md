@@ -29,6 +29,7 @@
  * mysql
  * opcache
  * pgsql
+ * phpdbg
  * readline
  * redis
  * soap

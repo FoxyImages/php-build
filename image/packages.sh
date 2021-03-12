@@ -32,6 +32,7 @@ $minimal_apt_get_install \
 	php$1-mysql \
 	php$1-opcache \
 	php$1-pgsql \
+	php$1-phpdbg \
 	php$1-readline \
 	php$1-soap \
 	php$1-sqlite3 \
