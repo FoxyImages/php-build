@@ -1,18 +1,30 @@
 NAME = sunfoxcz/php-build
-VERSION = 0.9.0
+VERSION = 1.0.0
 
-.PHONY: all php72 php73 php74 php80 release
+.PHONY: all release
 
-all: php72 php73 php74 php80
+all: build
 
-php72:
-	docker build -t $(NAME):7.2 --rm -f Dockerfile-7.2 .
+build: 7.3 7.4 8.0 8.1
 
-php73:
+7.3:
 	docker build -t $(NAME):7.3 --rm -f Dockerfile-7.3 .
 
-php74:
+7.4:
 	docker build -t $(NAME):7.4 --rm -f Dockerfile-7.4 .
 
-php80:
+8.0:
 	docker build -t $(NAME):8.0 --rm -f Dockerfile-8.0 .
+
+8.1:
+	docker build -t $(NAME):8.1 --rm -f Dockerfile-8.1 .
+
+release:
+	@if ! docker images $(NAME) | awk '{ print $$2 }' | grep -q -F '7.3'; then echo "$(NAME):7.3 is not yet built. Please run 'make build'"; false; fi
+	@if ! docker images $(NAME) | awk '{ print $$2 }' | grep -q -F '7.4'; then echo "$(NAME):7.4 is not yet built. Please run 'make build'"; false; fi
+	@if ! docker images $(NAME) | awk '{ print $$2 }' | grep -q -F '8.0'; then echo "$(NAME):8.0 is not yet built. Please run 'make build'"; false; fi
+	@if ! docker images $(NAME) | awk '{ print $$2 }' | grep -q -F '8.1'; then echo "$(NAME):8.0 is not yet built. Please run 'make build'"; false; fi
+	docker push $(NAME):7.3
+	docker push $(NAME):7.4
+	docker push $(NAME):8.0
+	docker push $(NAME):8.1

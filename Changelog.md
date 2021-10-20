@@ -1,3 +1,10 @@
+## 1.0.0 (release date: 20.10.2021)
+
+ * Updated baseimage to `ubuntu:20.04`
+ * Updated nodejs to `14.x`
+ * Removed unsupported PHP version 7.2
+ * Added PHP 8.1
+
 ## 0.9.1 (release date: 12.03.2021)
 
  * Added phpdbg

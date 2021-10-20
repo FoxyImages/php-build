@@ -11,7 +11,7 @@ LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
 ## NPM apt repository
 curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
-echo 'deb https://deb.nodesource.com/node_10.x bionic main' > /etc/apt/sources.list.d/nodesource.list
+echo "deb https://deb.nodesource.com/node_14.x ${DISTRIB_CODENAME} main" > /etc/apt/sources.list.d/nodesource.list
 
 apt-get update
 
@@ -37,12 +37,14 @@ $minimal_apt_get_install \
 	php$1-soap \
 	php$1-sqlite3 \
 	php$1-xml \
-	php$1-zip \
-	php$1-redis
+	php$1-zip
 
 PHP_VER=`echo $1 | sed -e 's/\.//g'`
 if [ "$PHP_VER" -lt "80" ]; then
 	$minimal_apt_get_install php$1-json
+fi
+if [ "$PHP_VER" -lt "81" ]; then
+	$minimal_apt_get_install php$1-redis
 fi
 
 # Grunt and Gulp

@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Tomas Jacik <tomas@jacik.cz>
 
 ADD image /build
@@ -13,7 +13,7 @@ ENV PATH $PATH:~/.composer/vendor/bin
 
 RUN /build/prepare.sh && \
 	/build/system_services.sh && \
-	/build/packages.sh 7.2 && \
+	/build/packages.sh 8.1 && \
 	/build/cleanup.sh
 
 CMD ["/sbin/my_init"]
