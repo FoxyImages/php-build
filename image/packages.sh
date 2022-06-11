@@ -10,15 +10,10 @@ $minimal_apt_get_install curl unzip gnupg git mysql-client postgresql-client red
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
 ## NPM apt repository
-curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
-echo "deb https://deb.nodesource.com/node_14.x ${DISTRIB_CODENAME} main" > /etc/apt/sources.list.d/nodesource.list
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 
 apt-get update
 
-## NodeJS
-$minimal_apt_get_install nodejs
-
-## PHP packages
 $minimal_apt_get_install \
 	php$1-bcmath \
 	php$1-bz2 \
@@ -37,7 +32,8 @@ $minimal_apt_get_install \
 	php$1-soap \
 	php$1-sqlite3 \
 	php$1-xml \
-	php$1-zip
+	php$1-zip \
+	nodejs
 
 PHP_VER=`echo $1 | sed -e 's/\.//g'`
 if [ "$PHP_VER" -lt "80" ]; then

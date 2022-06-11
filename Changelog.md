@@ -2,6 +2,7 @@
 
  * Updated baseimage to `ubuntu:22.04`
  * Removed unsupported PHP version 7.3
+ * Updated nodejs to `16.x`
 
 ## 1.0.0 (release date: 20.10.2021)
 
