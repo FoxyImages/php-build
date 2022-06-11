@@ -1,3 +1,7 @@
+## 2.0.0 (release date: 11.06.2022)
+
+ * Removed unsupported PHP version 7.3
+
 ## 1.0.0 (release date: 20.10.2021)
 
  * Updated baseimage to `ubuntu:20.04`
