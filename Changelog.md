@@ -1,3 +1,7 @@
+## 2.1.0 (release date: 25.09.2022)
+
+ * Added PHP 8.2
+
 ## 2.0.0 (release date: 11.06.2022)
 
  * Updated baseimage to `ubuntu:22.04`
