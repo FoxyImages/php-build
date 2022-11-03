@@ -1,3 +1,7 @@
+## 2.1.1 (release date: 04.11.2022)
+
+ * Added `make`
+
 ## 2.1.0 (release date: 25.09.2022)
 
  * Added PHP 8.2

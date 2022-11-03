@@ -4,7 +4,7 @@ source /build/buildconfig
 set -x
 
 ## Often used tools.
-$minimal_apt_get_install curl unzip gnupg git mysql-client postgresql-client redis-tools
+$minimal_apt_get_install curl unzip gnupg git make mysql-client postgresql-client redis-tools
 
 ## PPA Ondrej
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php

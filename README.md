@@ -8,6 +8,7 @@
 
  * curl
  * git
+ * make
  * mysql-client
  * nodejs
  * postgresql-client
