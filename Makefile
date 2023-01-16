@@ -1,7 +1,7 @@
 NAME = sunfoxcz/php-build
 VERSION = 2.0.0
 
-.PHONY: all release
+.PHONY: all release clean
 
 all: build
 
@@ -28,3 +28,6 @@ release:
 	docker push $(NAME):8.0
 	docker push $(NAME):8.1
 	docker push $(NAME):8.2
+
+clean:
+	docker builder prune
