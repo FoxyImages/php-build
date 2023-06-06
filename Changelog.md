@@ -1,3 +1,7 @@
+## 2.1.2 (release date: 06.06.2023)
+
+ * Added `imagick` extension
+
 ## 2.1.1 (release date: 04.11.2022)
 
  * Added `make`

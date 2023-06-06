@@ -25,6 +25,7 @@
  * gmp
  * imap
  * intl
+ * imagick
  * json
  * mbstring
  * mysql
