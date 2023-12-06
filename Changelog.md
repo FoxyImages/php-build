@@ -1,3 +1,7 @@
+## 3.0.0 (release date: 05.12.2023)
+
+ * Added PHP 8.3
+
 ## 2.1.2 (release date: 06.06.2023)
 
  * Added `imagick` extension
