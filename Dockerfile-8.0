@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
-MAINTAINER Tomas Jacik <tomas@jacik.cz>
+LABEL org.opencontainers.image.authors="tomas@jacik.cz"
 
 ADD image /build
 
