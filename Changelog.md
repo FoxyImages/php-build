@@ -1,3 +1,7 @@
+## 4.0.0 (release date: 26.11.2024)
+
+ * Added PHP 8.4
+
 ## 3.0.0 (release date: 05.12.2023)
 
  * Added PHP 8.3
