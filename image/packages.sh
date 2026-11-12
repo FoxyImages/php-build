@@ -6,8 +6,10 @@ set -x
 ## Often used tools.
 $minimal_apt_get_install curl unzip gnupg git make mysql-client postgresql-client redis-tools
 
-## PPA Ondrej
-LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+curl -sSLo /tmp/debsuryorg-archive-keyring.deb https://packages.sury.org/debsuryorg-archive-keyring.deb
+dpkg -i /tmp/debsuryorg-archive-keyring.deb
+rm /tmp/debsuryorg-archive-keyring.deb
+echo "deb [signed-by=/usr/share/keyrings/debsuryorg-archive-keyring.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/debsuryorg-php.list
 
 ## NPM apt repository
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
@@ -26,7 +28,6 @@ $minimal_apt_get_install \
 	php$1-imagick \
 	php$1-mbstring \
 	php$1-mysql \
-	php$1-opcache \
 	php$1-pgsql \
 	php$1-phpdbg \
 	php$1-readline \
@@ -42,6 +43,9 @@ if [ "$PHP_VER" -lt "80" ]; then
 fi
 if [ "$PHP_VER" -lt "81" ]; then
 	$minimal_apt_get_install php$1-redis
+fi
+if [ "$PHP_VER" -lt "85" ]; then
+	$minimal_apt_get_install php$1-opcache
 fi
 
 # Grunt and Gulp

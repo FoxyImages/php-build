@@ -1,3 +1,8 @@
+## 5.0.0 (release date: 02.12.2025)
+
+ * Updated baseimage to `ubuntu:24.04`
+ * Added PHP 8.5
+
 ## 4.0.0 (release date: 26.11.2024)
 
  * Added PHP 8.4
